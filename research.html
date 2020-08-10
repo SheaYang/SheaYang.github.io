@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Shengqi Yang --- Research</title>
+<meta id="viewport" name="viewport" content="width=500" />
+<meta name="description" content="Chang is a postdoc at Berkeley Lab" />
+
+<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="css/base.css" type="text/css" />
+<link rel="stylesheet" href="css/code.css" type="text/css" />
+
+<link rel="icon" type="image/png" href="images/chicago.png" sizes="300x300"> 
+<!--<link rel="icon" type="image/png" href="{{ SITEURL }}/theme/images/favicon.png" sizes="32x32">  -->
+<style> 
+    #research a{
+        color:DarkBlue; 
+    }
+    #research figcaption{
+        line-height:15px; 
+    }
+</style>
+</head>
+<body>
+
+<div class="content">
+
+    <header>
+        <a href="index.html"><img src="images/nasa.png" alt="me"></a>
+        <h1><a href="index.html">Shengqi Yang</a></h1>
+        <ul>
+            <li></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="cv/CV.pdf">CV</a></li>
+        </ul>
+    </header>
+    <section id="research"> 
+        My research interests include <a href="#IM">intensity mapping surveys</a>, <a href="#SAM">galaxy formation semi-nalytic model</a>,
+        <a href="#ISM">ISM analytic models</a>, <a href="#LSS">test gravity</a>.
+        <p>
+        <h2 id="IM"><u>Intensity Mapping Surveys</u></h2>
+        <img src="images/EXCLAIM_LOGO.pdf" height=100px align="right"></br>
+        Intensity Mapping (IM) is an emerging technique that integrates the emission along the 
+        line-of-sight from all resources. Comparing to the galaxy spectroscopic survey, IM 
+        measurements represent the average galaxy population (including faint sources) across 
+        large volumes. IM is promising in revealing the correlation between emission line 
+        luminosity and galaxy star formation as well as interstellar medium (ISM) properties.
+        Together with collarborators, we measure an excess consistent with the CII fine sturcture 
+        line, which is the brightest far-infrared emission line and a strong tracer of star 
+        formation, at redshift z~2.6 [<a href="https://arxiv.org/abs/1904.01180">1904.01180</a>]
+        through cross correlating the Planck HFI intensity maps with eBOSS QSO map. This is the 
+        current most significant detection of an excess consistent with the CII emission line 
+        from intensity maps.
+        Milky Way continuum foreground and interloper line contamination are the two main 
+        challenges of IM data analysis. In [<a href="https://arxiv.org/abs/1904.01180">1812.06223</a>]
+        I try to add Milky Way template maps in order to limit the IM signal uncertainty, although 
+        in practice the Milky Way template maps do not provide significant benefit :-(
+        Taking advantage of the high frequency resolution, future IM surveys including the Experiment 
+        for Cryogenic Large-aperture Intensity Mapping (EXCLAIM) should permit a unique measurement of
+        the clustering of line and continuum radiation as a function of redshfit! I am interested in 
+        developing new foreground removal techniques and extract more significant signal detection from
+        the upcoming IM data! :-D
+        </p>
+
+        <p>
+        <h2 id="SAM"><u>Galaxy Formation Semi-analytic models</u></h2></br>
+        <img src="images/galacticus.png" height=100px align="right"></br>
+        Semi-analytic model (SAM) is an intermediate approach between direct analytic reasoning and pure
+        numberical simulation. It makes less assumptions than analytic models while is less computationally
+        expensive than N-Body pr hydrodynamic simulations. SAMs have wide applications, such as constraining
+        dark matter (DM) properties, probing galaxy formation processes, and generating mock IM data.
+        Together with collarboators, I develope a new calibration methos of sub-halo orbital evolution for 
+        a open source SAM -- Galacticus [<a href="https://arxiv.org/abs/1904.01180">2003.10646</a>]. 
+        Non-linear sub-halo evolution models calibrated in this work can provide more accurate semi-analytic 
+        predictions for sub-halo statistics and place more robust constraints on DM microphysics with future 
+        observations. 
+        I am currently working on using Santa Cruz SAM to simulate physically grounded IM mock data for COMAP
+        and EXCLAIM surveys. Can I Calibrate Santa Cruz SAM with similar approch? Or should we use machine 
+        learning techniques? 
+        </p>
+
+        <p>
+        <h2 id="ISM"><u>ISM analytic models</u></h2></br>
+        <img src="images/OIII.png" height=100px align="right"></br>
+        Beside SAMs, I am also interested in probing the correlations between line emission and ISM properties
+        as well as galaxy SFR with analytic models. Together with collaborators I develop an analytic model 
+        for OIII fine structure emission [<a href="https://arxiv.org/abs/1904.01180">2007.14439</a>]. This 
+        model sums over the emission from discrete Stromgren spheres and consider the total volume of HII 
+        regions in a galaxy of a given SFR. It predicts a galaxy's OIII 88 micron luminosity from the gas
+        density, metallicity, the rate of hydrogen ionizing photons emitted, and the shape of the ionizing 
+        spectrum. We use this model to interprete the recent ALMA OIII measurements of galaxies during the 
+        Epoch of Reionization.
+        I am currently thinking about extending this model to other emission lines such as CII and OII.
+        </p>
+    
+        <p>
+        <h2 id="LSS"><u>large scale structure</u></h2></br>
+        EG statistic is a nice quantity to probe gravity. By design, EG is independent of the clustering bias,
+        which is hard to measure, and is scale-independent assuming GR. However, a process which is not accounted 
+        for during the original EG construction -- magnification bias, can shift EG significantly for upcoming 
+        high-redshfit surveys and make it scale dependent even under GR. In 
+        [<a href="https://arxiv.org/abs/1807.05639">1807.05639</a>] we use the convergence auto power spectrum
+        to estimate and subtract higher order terms contributed by the lensing magnification effect. We test through
+        simulations that this calibration methos can calibrate EG from 2-4 times the simulation error to well within 
+        the error. This method will work increasingly well in future CMB lensing surveys.
+        Can we measure EG instead through fine structure lines intensity mapping?
+        </p>
+    </section>
+
+    <footer> 
+        Email: <a href="mailto:sy1823@nyu.edu">sy1823@nyu.edu</a>.
+        Thanks to ChangHoon Hahn for sharing his website template!
+    </footer> 
+</div>
+</body>
+</html>
